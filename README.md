@@ -30,6 +30,8 @@ ALTER TABLE employees
 ADD COLUMN password VARCHAR(255) NOT NULL,
 ADD COLUMN role ENUM('admin', 'employee') DEFAULT 'employee';
 
+default admin
+-------------------------------
 INSERT INTO employees (name, email, password, role) 
 VALUES ('System Admin', 'admin@mail.com', 'admin123', 'admin');
 
